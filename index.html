@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMR — Portfolio 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── NAV ── -->
+    <nav class="nav" id="nav">
+      <div class="nav-logo">AMR</div>
+      <div class="nav-dots" id="navDots">
+        <button class="nav-dot active" data-page="0" title="Home"></button>
+        <button class="nav-dot" data-page="1" title="Profile"></button>
+        <button class="nav-dot" data-page="2" title="Projects"></button>
+        <button class="nav-dot" data-page="3" title="Contact"></button>
+      </div>
+      <button class="nav-menu-btn" id="navMenuBtn" aria-label="Open menu">
+        Menu
+      </button>
+      <div class="nav-links" id="navLinks">
+        <button class="nav-link active" data-page="0">Home</button>
+        <button class="nav-link" data-page="1">Profile</button>
+        <button class="nav-link" data-page="2">Projects</button>
+        <button class="nav-link" data-page="3">Contact</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <!-- buat video menjadi pelan
+        -->
+      <video
+        src="bg.mp4"
+        autoplay
+        muted
+        loop
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
+        "
+      ></video>
+      <div class="menu-topbar">
+        <button class="menu-close" id="menuClose" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+          <span>Close</span>
+        </button>
+        <div class="menu-brand">Amr</div>
+        <a class="menu-chat" href="#" target="_blank" rel="noreferrer">
+          Let's chat <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="menu-content">
+        <div class="menu-items">
+          <button class="menu-item" data-page="0">Home</button>
+          <button class="menu-item" data-page="1">Profile</button>
+          <button class="menu-item" data-page="2">Projects</button>
+          <button class="menu-item" data-page="3">Contact</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PAGES WRAPPER ── -->
+    <div class="pages" id="pages">
+      <!-- ════ PAGE 1 · HERO ════ -->
+      <section class="page page-hero" id="page-0">
+        <div
+          class="hero-bg-text"
+          aria-hidden="true"
+          style="
+            font-optical-sizing: auto;
+            font-weight: 800px;
+            font-style: normal;
+          "
+        >
+          PORT<br />FOLIO
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="pulse-dot"></span>
+            Programmer &amp; Designer
+          </div>
+
+          <div class="hero-headline">
+            <div class="hl-row hl-row-1">
+              <span class="hl-num">01</span>
+              <h1 class="hl-word">PORT</h1>
+            </div>
+            <div class="hl-row hl-row-2">
+              <h1 class="hl-word hl-outline">FOLIO</h1>
+              <span class="hl-year">2026</span>
+            </div>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hm-item">
+              <span class="hm-label">Name</span>
+              <span class="hm-val">Amr Harharah</span>
+            </div>
+            <div class="hm-div"></div>
+            <div class="hm-item">
+              <span class="hm-label">Role</span>
+              <span class="hm-val">Programmer &amp; Designer</span>
+            </div>
+          </div>
+
+          <button class="cta-btn" id="ctaStart">
+            <span>Explore</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="hero-deco" aria-hidden="true">
+          <div class="deco-circle dc-1"></div>
+          <div class="deco-circle dc-2"></div>
+          <div class="deco-line dl-1"></div>
+          <div class="deco-line dl-2"></div>
+        </div>
+
+        <div class="page-num"><span>01</span>/04</div>
+        <p class="scroll-hint">
+          <i class="fa-solid fa-chevron-down"></i> scroll
+        </p>
+      </section>
+
+      <!-- ════ PAGE 2 · PROFILE ════ -->
+      <section class="page page-profile" id="page-1">
+        <div class="section-bg-text" aria-hidden="true">PROFILE</div>
+
+        <div class="profile-grid">
+          <div class="pg-header">
+            <span class="sec-num">02</span>
+            <h2 class="sec-title">About<em> Me</em></h2>
+          </div>
+
+          <div class="pg-about">
+            <div class="about-avatar">
+              <div class="av-border"></div>
+              <div class="av-inner"><i class="fa-regular fa-user"></i></div>
+              <div class="av-name">Amr<br />Harharah</div>
+            </div>
+            <p class="about-bio">
+              Hi, I'm <strong>Amr</strong> — a self-taught programmer and
+              designer passionate about web development, user experience, and
+              creative problem-solving. Building projects since 2020, from
+              frontend frameworks to backend architecture.
+            </p>
+          </div>
+
+          <div class="pg-skills">
+            <h3 class="card-label">Software Skills</h3>
+            <div class="skills-row">
+              <div class="sk-chip">
+                <i class="fa-brands fa-html5 fa-2xl" style="color: #e34c26"></i
+                >HTML
+              </div>
+              <div class="sk-chip">
+                <i
+                  class="fa-brands fa-css3-alt fa-2xl"
+                  style="color: #663399"
+                ></i
+                >CSS
+              </div>
+              <div class="sk-chip">
+                <i
+                  class="fa-brands fa-square-js fa-2xl"
+                  style="color: #f7df1e"
+                ></i
+                >JavaScript
+              </div>
+              <div class="sk-chip">
+                <i class="fa-brands fa-python fa-2xl" style="color: #4b8bbe"></i
+                >Python
+              </div>
+              <div class="sk-chip">
+                <i class="fa-brands fa-debian fa-2xl" style="color: #d70a53"></i
+                >Debian
+              </div>
+              <div class="sk-chip">
+                <i class="fa-brands fa-figma fa-2xl"></i>Figma
+              </div>
+              <div class="sk-chip">
+                <i class="fa-brands fa-steam fa-2xl"></i>Steam
+              </div>
+            </div>
+          </div>
+
+          <div class="pg-edu">
+            <h3 class="card-label">Education</h3>
+            <p class="edu-period">2025 - 2026</p>
+            <p class="edu-school">SMA ABUDZAR PLUS IT</p>
+          </div>
+
+          <div class="pg-exp">
+            <h3 class="card-label">Experience</h3>
+            <p class="edu-period">Web Development</p>
+            <p class="edu-school">Freelance Projects</p>
+            <p class="edu-period" style="margin-top: 4px">
+              Design &amp; Development
+            </p>
+          </div>
+
+          <div class="pg-lang">
+            <h3 class="card-label">Language</h3>
+            <div class="lang-bars">
+              <div class="lb-row">
+                <span class="lb-name">Indonesia</span>
+                <div class="lb-track">
+                  <div class="lb-fill" style="--w: 99%"></div>
+                </div>
+                <span class="lb-pct">99%</span>
+              </div>
+              <div class="lb-row">
+                <span class="lb-name">English</span>
+                <div class="lb-track">
+                  <div class="lb-fill" style="--w: 60%"></div>
+                </div>
+                <span class="lb-pct">60%</span>
+              </div>
+              <div class="lb-row">
+                <span class="lb-name">Arabic</span>
+                <div class="lb-track">
+                  <div class="lb-fill" style="--w: 40%"></div>
+                </div>
+                <span class="lb-pct">40%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-num"><span>02</span>/04</div>
+      </section>
+
+      <!-- ════ PAGE 3 · PROJECTS ════ -->
+      <section class="page page-projects" id="page-2">
+        <div class="section-bg-text" aria-hidden="true">PROJECT</div>
+
+        <div class="proj-wrap">
+          <div class="proj-hdr">
+            <span class="sec-num">03</span>
+            <h2 class="sec-title">Recap<em> Project</em></h2>
+            <span class="proj-year-badge">2025</span>
+          </div>
+
+          <div class="proj-layout" class="block">
+            <a
+              class="proj-wide-card"
+              href="https://amrrharharah.github.io/Play-BasketBall-Beta/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Play BasketBall project"
+            >
+              <img src="project1.png" alt="Play BasketBall project" />
+            </a>
+            <a
+              class="proj-wide-card"
+              href="https://amrrharharah.github.io/Play-BasketBall-Beta/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Play BasketBall project"
+            >
+              <img src="image.png" alt="Play BasketBall project" />
+            </a>
+          </div>
+        </div>
+        <div class="page-num"><span>03</span>/04</div>
+      </section>
+
+      <!-- ════ PAGE 4 · CONTACT ════ -->
+      <section class="page page-contact" id="page-3">
+        <div class="contact-grid">
+          <div class="cg-left">
+            <span class="sec-num">04</span>
+            <h2 class="sec-title">Contact<em> Me</em></h2>
+
+            <div class="ct-card">
+              <div class="ct-av-wrap">
+                <div class="ct-ring"></div>
+                <div class="ct-av"><i class="fa-regular fa-user"></i></div>
+              </div>
+              <div class="ct-info">
+                <p class="ct-name">Amr Harharah</p>
+                <p class="ct-role">Programmer &amp; Designer</p>
+              </div>
+            </div>
+
+            <ul class="soc-list">
+              <li>
+                <a class="soc-item" href="#" aria-label="Instagram">
+                  <div class="soc-icon-wrap si-ig">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="soc-text">
+                    <span class="soc-platform">Instagram</span>
+                    <span class="soc-handle">@AmrHarharah</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-right soc-arr"></i>
+                </a>
+              </li>
+              <li>
+                <a class="soc-item" href="#" aria-label="Discord">
+                  <div class="soc-icon-wrap si-dc">
+                    <i class="fa-brands fa-discord"></i>
+                  </div>
+                  <div class="soc-text">
+                    <span class="soc-platform">Discord</span>
+                    <span class="soc-handle">@Amrharharah</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-right soc-arr"></i>
+                </a>
+              </li>
+              <li>
+                <a class="soc-item" href="#" aria-label="GitHub">
+                  <div class="soc-icon-wrap si-gh">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="soc-text">
+                    <span class="soc-platform">GitHub</span>
+                    <span class="soc-handle">Amr Harharah</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-right soc-arr"></i>
+                </a>
+              </li>
+              <li>
+                <a class="soc-item" href="#" aria-label="Pinterest">
+                  <div class="soc-icon-wrap si-pt">
+                    <i class="fa-brands fa-pinterest"></i>
+                  </div>
+                  <div class="soc-text">
+                    <span class="soc-platform">Pinterest</span>
+                    <span class="soc-handle">@AmrHarharah</span>
+                  </div>
+                  <i class="fa-solid fa-arrow-right soc-arr"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cg-right">
+            <div class="ty-block">
+              <p class="ty-eyebrow">— end of portfolio —</p>
+              <h2 class="ty-big">THANK<br /><em>YOU</em></h2>
+              <p class="ty-year">2026</p>
+              <div class="ty-divider"></div>
+              <p class="ty-credit">
+                Made with passion by <strong>Amr Harharah</strong>
+              </p>
+            </div>
+
+            <div class="prev-works">
+              <div class="pw-card">
+                <i class="fa-regular fa-folder-open"></i>
+                <p>Portfolio<span>2023</span></p>
+              </div>
+              <div class="pw-card">
+                <i class="fa-solid fa-palette"></i>
+                <p>Design<span>2024</span></p>
+              </div>
+              <div class="pw-card">
+                <i class="fa-solid fa-clapperboard"></i>
+                <p>Video<span>Work</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-num"><span>04</span>/04</div>
+      </section>
+    </div>
+    <!-- /pages -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
