@@ -1,0 +1,16 @@
+module.exports = {
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        paper: "#f4f2ec",
+        ink: "#141614",
+        mute: "#6f6d64",
+        line: "#ddd9ce",
+        accent: "#5d7f6c",
+      },
+      fontFamily: { sans: ["var(--font-sans)"], serif: ["var(--font-serif)"] },
+    },
+  },
+  plugins: [],
+};
