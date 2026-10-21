@@ -1,0 +1,11 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:#f4f2ec;color:#141614;font-family:var(--font-sans),system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body.locked{overflow:hidden}
+::selection{background:#5d7f6c;color:#fff}
+:focus-visible{outline:2px solid #5d7f6c;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.font-serif{font-weight:600;letter-spacing:-0.04em;text-wrap:balance}
+p{text-wrap:pretty}
+body{line-height:1.6;text-rendering:optimizeLegibility}
+html{scrollbar-width:thin;scrollbar-color:#bdb8aa transparent}
