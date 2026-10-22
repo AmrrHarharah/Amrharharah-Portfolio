@@ -1,12 +1,38 @@
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiGreensock, SiGithub, SiVercel, SiFigma, SiNodedotjs, SiPostgresql, SiPrisma, SiDocker, SiRedis, SiFramer, SiGit } from "react-icons/si";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiGreensock,
+  SiGithub,
+  SiVercel,
+  SiFigma,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiDocker,
+  SiRedis,
+  SiFramer,
+  SiGit,
+} from "react-icons/si";
 import { MousePointer2, Slash } from "lucide-react";
 type T = { Icon: any; bg: string; fg: string };
 export const tech: Record<string, T> = {
-  React: { Icon: SiReact, bg: "#1fb2c7", fg: "#fff" }, "Next.js": { Icon: SiNextdotjs, bg: "#1b1b1b", fg: "#fff" },
-  TypeScript: { Icon: SiTypescript, bg: "#3178c6", fg: "#fff" }, "Tailwind CSS": { Icon: SiTailwindcss, bg: "#1fb0ee", fg: "#fff" },
-  GSAP: { Icon: SiGreensock, bg: "#0cc84a", fg: "#fff" }, "shadcn/ui": { Icon: Slash, bg: "#5b55f0", fg: "#fff" },
-  GitHub: { Icon: SiGithub, bg: "#24292f", fg: "#fff" }, Vercel: { Icon: SiVercel, bg: "#0a0a0a", fg: "#fff" },
-  Figma: { Icon: SiFigma, bg: "#2b2b2b", fg: "#fff" }, Cursor: { Icon: MousePointer2, bg: "#1e1e1e", fg: "#fff" },
-  "Framer Motion": { Icon: SiFramer, bg: "#0055ff", fg: "#fff" }, "Node.js": { Icon: SiNodedotjs, bg: "#3c873a", fg: "#fff" },
-  PostgreSQL: { Icon: SiPostgresql, bg: "#336791", fg: "#fff" }, Prisma: { Icon: SiPrisma, bg: "#2d3748", fg: "#fff" },
-  Docker: { Icon: SiDocker, bg: "#2496ed", fg: "#fff" }, Redis: { Icon: SiRedis, bg: "#d82c20", fg: "#fff" }, Git: { Icon: SiGit, bg: "#f05032", fg: "#fff" } };
+  React: { Icon: SiReact, bg: "#1fb2c7", fg: "#fff" },
+  "Next.js": { Icon: SiNextdotjs, bg: "#1b1b1b", fg: "#fff" },
+  TypeScript: { Icon: SiTypescript, bg: "#3178c6", fg: "#fff" },
+  "Tailwind CSS": { Icon: SiTailwindcss, bg: "#1fb0ee", fg: "#fff" },
+  GSAP: { Icon: SiGreensock, bg: "#0cc84a", fg: "#fff" },
+  "shadcn/ui": { Icon: Slash, bg: "#5b55f0", fg: "#fff" },
+  GitHub: { Icon: SiGithub, bg: "#24292f", fg: "#fff" },
+  Vercel: { Icon: SiVercel, bg: "#0a0a0a", fg: "#fff" },
+  Figma: { Icon: SiFigma, bg: "#2b2b2b", fg: "#fff" },
+  Cursor: { Icon: MousePointer2, bg: "#1e1e1e", fg: "#fff" },
+  "Framer Motion": { Icon: SiFramer, bg: "#0055ff", fg: "#fff" },
+  "Node.js": { Icon: SiNodedotjs, bg: "#3c873a", fg: "#fff" },
+  PostgreSQL: { Icon: SiPostgresql, bg: "#336791", fg: "#fff" },
+  Prisma: { Icon: SiPrisma, bg: "#2d3748", fg: "#fff" },
+  Docker: { Icon: SiDocker, bg: "#2496ed", fg: "#fff" },
+  Redis: { Icon: SiRedis, bg: "#d82c20", fg: "#fff" },
+  Git: { Icon: SiGit, bg: "#f05032", fg: "#fff" },
+};

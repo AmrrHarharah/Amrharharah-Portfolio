@@ -1,5 +1,6 @@
 import TextReveal from "./TextReveal";
 import ParallaxImage from "./ParallaxImage";
+import Stats from "./Stats";
 import { me } from "@/lib/site";
 export default function About() {
   return (
@@ -13,6 +14,7 @@ export default function About() {
           className={`font-serif leading-tight ${me.photo ? "text-2xl md:text-4xl" : "text-3xl md:text-6xl"}`}
         />
       </div>
+      <Stats />
     </section>
   );
 }

@@ -7,6 +7,7 @@ import Nav from "@/components/Nav";
 import Cursor from "@/components/Cursor";
 import TabTitle from "@/components/TabTitle";
 import BackToTop from "@/components/BackToTop";
+import CommandPalette from "@/components/CommandPalette";
 import { me } from "@/lib/site";
 const sans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Space_Grotesk({ subsets: ["latin"], variable: "--font-serif" });
@@ -20,6 +21,6 @@ export const viewport: Viewport = { themeColor: "#f4f2ec" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const ld = { "@context": "https://schema.org", "@type": "Person", name: me.name, jobTitle: me.role, url: me.siteUrl, email: me.email, sameAs: (me.socials as any[]).map((s) => s.href) };
   return (<html lang="id" className={`${sans.variable} ${serif.variable} ${display.variable}`}><body>
-    <Nav /><Cursor /><TabTitle /><BackToTop /><SmoothScroll>{children}</SmoothScroll><Analytics />
+    <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-paper">Lompat ke konten</a><Nav /><Cursor /><TabTitle /><BackToTop /><CommandPalette /><SmoothScroll>{children}</SmoothScroll><Analytics />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} /></body></html>);
 }

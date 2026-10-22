@@ -1,5 +1,3 @@
-
-
 "use client";
 import { useEffect, useState } from "react";
 import {
@@ -30,6 +28,13 @@ export default function Hero() {
     gy = useSpring(my, { stiffness: 60, damping: 20 });
   const [r, setR] = useState(0);
   const [go, setGo] = useState(false);
+  const [open, setOpen] = useState(true);
+  useEffect(() => {
+    fetch("/api/status")
+      .then((r) => r.json())
+      .then((d) => setOpen(d.open !== false))
+      .catch(() => {});
+  }, []);
   useEffect(() => {
     if (sessionStorage.getItem("intro-seen")) {
       setGo(true);
@@ -88,8 +93,12 @@ export default function Hero() {
           {...fade(0)}
           className="flex w-fit items-center gap-2 rounded-full border border-line bg-white/60 px-4 py-2 text-sm backdrop-blur"
         >
-          <span className="h-2 w-2 rounded-full bg-accent" />
-          Terbuka untuk proyek baru
+          <span
+            className={`h-2 w-2 rounded-full ${open ? "bg-accent" : "bg-mute"}`}
+          />
+          {open
+            ? "Terbuka untuk proyek baru"
+            : "Sedang penuh, belum menerima proyek"}
         </motion.div>
         <div>
           <h1 className="flex flex-wrap gap-x-[0.22em] font-serif text-[19vw] leading-[0.9] md:text-[11vw]">

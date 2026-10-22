@@ -10,7 +10,7 @@ import Experience from "@/components/Experience";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
 export default function Page() {
-  return (<><Preloader /><main className="relative z-10">
+  return (<><Preloader /><main id="main" className="relative z-10">
     <Hero />
     <div className="relative z-10 rounded-[2.5rem] bg-paper">
       <About /><ScrollZoom /><Projects /><Marquee text="Terbuka untuk proyek baru ✦" /><Skills /><TechStack /><Experience /><Testimonials />
