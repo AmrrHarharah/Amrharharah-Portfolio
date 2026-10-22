@@ -31,7 +31,7 @@ export default function Stats() {
       suffix: "+",
       label: "Teknologi",
     },
-    { value: jobs.length, suffix: "", label: "Tempat kerja" },
+    { value: jobs.length, suffix: "", label: "Experience" },
   ];
   return (
     <dl className="mx-auto mt-24 grid max-w-6xl grid-cols-3 gap-6 border-t border-line pt-10">
