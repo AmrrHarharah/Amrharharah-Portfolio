@@ -12,8 +12,8 @@ export default function Experience() {
   });
   const h = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
   return (
-    <section id="pengalaman" className="overflow-x-clip px-6 py-32 md:px-10">
-      <Heading>Pengalaman</Heading>
+    <section id="experience" className="overflow-x-clip px-6 py-32 md:px-10">
+      <Heading>Experience</Heading>
       <div ref={ref} className="relative">
         <div className="absolute bottom-0 left-3 top-0 w-px bg-line md:left-1/2" />
         <motion.div

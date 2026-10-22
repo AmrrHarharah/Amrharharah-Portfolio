@@ -22,7 +22,7 @@ export default function ScrollZoom() {
             style={{ opacity: textOpacity }}
             className="max-w-3xl px-6 text-center font-serif text-4xl md:text-7xl"
           >
-            Kode yang bersih, produk yang terasa hidup.
+            Kode yang Clean, Web yang terasa Active.
           </motion.p>
         </motion.div>
       </div>

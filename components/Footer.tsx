@@ -11,12 +11,12 @@ const tile = "grid h-9 w-9 place-items-center rounded-full text-white";
 export default function Footer() {
   return (
     <footer
-      id="kontak"
+      id="contact"
       className="sticky bottom-0 z-0 flex min-h-[90vh] flex-col justify-between bg-ink px-6 pb-6 pt-28 text-paper md:px-10"
     >
       <div>
         <p className="font-serif text-3xl md:text-5xl">
-          Punya proyek? Mari bicara.
+          Let's Connect.
         </p>
         <a
           href={`mailto:${me.email}`}

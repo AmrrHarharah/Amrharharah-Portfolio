@@ -6,13 +6,9 @@ export const me = {
   city: "Jakarta, Indonesia",
   words: [
     "Halo",
-    "Hello",
     "こんにちは",
-    "안녕하세요",
-    "Ciao",
     "你好",
     "مرحبا",
-    "Здравствуйте",
     "Bonjour",
     "Hola",
     "Selamat datang",
@@ -22,7 +18,7 @@ export const me = {
   about:
     "Saya developer yang suka mengubah masalah rumit menjadi antarmuka yang sederhana. Fokus saya ada di React, Next.js, dan performa web. Saya terbiasa bekerja dari desain sampai produk rilis, dan peduli pada detail kecil yang membuat sebuah produk terasa halus.",
   tagline: "Membangun web yang cepat dan nyaman dipakai.",
-  siteUrl: "https://namaanda.com", // ganti dengan domain final Anda
+  siteUrl: "https://amrharharah.vercel.app/", // ganti dengan domain final Anda
   photo: "/foto.jpg", // file di folder public/
   cv: "/cv.pdf", // file di folder public/
   awayTitle: "Kembali ya 👋", // judul tab saat pengunjung pindah tab
@@ -47,9 +43,9 @@ export const projects = [
     stack: "Html, CSS, JavaScript",
     href: "#",
     image: "/projects/project1.png", // screenshot di public/projects/
-    summary: "Satu paragraf tentang proyek ini.",
-    problem: "Masalah apa yang ingin diselesaikan.",
-    role: "Peran Anda dan apa yang Anda kerjakan.",
+    summary: "Project untuk melihat stats para pemain basket .",
+    problem: "Kurangnya informasi yang mudah diakses tentang performa pemain basket.",
+    role: "Full-stack Developer, membangun antarmuka web dan sistem statistik.",
     result: "Hasilnya, sebaiknya dengan angka. Contoh: waktu muat turun 45%.",
     link: "https://amrrharharah.github.io/Play-BasketBall-Beta/",
     github: "https://github.com/username/repo",
@@ -61,9 +57,9 @@ export const projects = [
     stack: "Html, CSS, JavaScript",
     href: "#",
     image: "/projects/calculator.png", // screenshot di public/projects/
-    summary: "Satu paragraf tentang proyek ini.",
-    problem: "Masalah apa yang ingin diselesaikan.",
-    role: "Peran Anda dan apa yang Anda kerjakan.",
+    summary: "Project kalkulator sederhana untuk melakukan perhitungan dasar.",
+    problem: "Kekurangan dalam melakukan perhitungan matematika secara manual.",
+    role: "Full-stack Developer, membangun antarmuka web dan sistem perhitungan.",
     result: "Hasilnya, sebaiknya dengan angka. Contoh: waktu muat turun 45%.",
     link: "https://amrrharharah.github.io/Calculator-project/",
     github: "https://github.com/username/repo",
@@ -75,9 +71,9 @@ export const projects = [
     stack: "react, Tailwind CSS, Gsap, Framer Motion,",
     href: "#",
     image: "/projects/project2.png", // screenshot di public/projects/
-    summary: "Satu paragraf tentang proyek ini.",
-    problem: "Masalah apa yang ingin diselesaikan.",
-    role: "Peran Anda dan apa yang Anda kerjakan.",
+    summary: "Project untuk menemukan pemain basket di sekitar Anda.",
+    problem: "Sulitnya menemukan pemain basket di sekitar Anda.",
+    role: "Full-stack Developer, membangun antarmuka web dan sistem pencarian.",
     result: "Hasilnya, sebaiknya dengan angka. Contoh: waktu muat turun 45%.",
     link: "https://situs-proyek.com",
     github: "https://github.com/username/repo",
@@ -89,12 +85,26 @@ export const projects = [
     stack: "React, Next.js, Tailwind CSS",
     href: "",
     image: "/projects/project3.png", // screenshot di public/projects/
-    summary: "Satu paragraf tentang proyek ini.",
-    problem: "Masalah apa yang ingin diselesaikan.",
-    role: "Peran Anda dan apa yang Anda kerjakan.",
+    summary: "project untuk mempromosikan villa dan memudahkan pemesanan.",
+    problem: "Mempromosikan villa dan memudahkan pemesanan secara online.",
+    role: "Full-stack Developer, membangun antarmuka web dan sistem pemesanan.",
     result: "Hasilnya, sebaiknya dengan angka. Contoh: waktu muat turun 45%.",
     link: "https://villa-zamzam.vercel.app/",
     github: "https://github.com/username/repo",
+  },
+  {
+    title: "Ruang Siswa",
+    type: "Web App",
+    year: "2026",
+    stack: "React, Next.js, Tailwind CSS",
+    href: "",
+    image: "/projects/project4.png", // screenshot di public/projects/
+    summary: "Project untuk mengelola informasi siswa.",
+    problem: "Mengelola informasi siswa secara efisien.",
+    role: "Mengelola informasi siswa melalui antarmuka web yang intuitif.",
+    result: "Meningkatkan efisiensi dalam mengelola data siswa.",
+    link: "https://ruang-siswa.vercel.app/",
+    github: "",
   },
 ];
 export const skills = [
@@ -114,21 +124,21 @@ export const skills = [
 ];
 export const jobs = [
   {
-    period: "2024 – sekarang",
-    role: "Senior Frontend Developer",
-    org: "Perusahaan A",
-    note: "Memimpin migrasi ke Next.js dan memangkas waktu muat halaman 45%.",
+    period: "2024 – 2025",
+    role: "Student Web Developer",
+    org: "-",
+    note: "Mempelajari HTML, JavaScript, dan CSS melalui proyek-proyek pribadi.",
   },
   {
-    period: "2022 – 2024",
+    period: "2025 – 2026",
+    role: "Front-end Developer",
+    org: "SMA PLUS ABUDZAR",
+    note: "Mempelajari React, Next.js, dan Tailwind CSS melalui proyek-proyek pribadi.",
+  },
+  {
+    period: "2026 – Sekarang",
     role: "Full-stack Developer",
-    org: "Startup B",
-    note: "Membangun platform pembayaran dari nol bersama tim 5 orang.",
-  },
-  {
-    period: "2020 – 2022",
-    role: "Junior Developer",
-    org: "Agensi C",
-    note: "Mengirim lebih dari 20 situs klien dengan React dan WordPress.",
+    org: "SMA PLUS ABUDZAR",
+    note: "Membangun beberapa proyek web untuk klien, termasuk sistem informasi dan situs web dinamis.",
   },
 ];
