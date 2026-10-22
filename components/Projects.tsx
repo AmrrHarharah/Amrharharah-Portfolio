@@ -67,7 +67,7 @@ export default function Projects() {
         my.set(e.clientY);
       }}
     >
-      <Heading>Proyek pilihan</Heading>
+      <Heading>Project</Heading>
       <ul
         className="border-t border-neutral-500/40"
         onMouseLeave={() => setShow(false)}
