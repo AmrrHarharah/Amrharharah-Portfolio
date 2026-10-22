@@ -2,13 +2,12 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { me } from "@/lib/site";
-// Intro hanya tampil sekali per sesi; kunjungan berikutnya langsung masuk.
 export default function Preloader() {
   const [i, setI] = useState(0);
   const [phase, setPhase] = useState<"words" | "open" | "done">("words");
   useEffect(() => {
-    if (sessionStorage.getItem("intro-seen")) setPhase("done");
-    else document.body.classList.add("locked");
+    document.body.classList.add("locked");
+    return () => document.body.classList.remove("locked");
   }, []);
   useEffect(() => {
     if (phase !== "words") return;
@@ -21,7 +20,6 @@ export default function Preloader() {
   }, [i, phase]);
   useEffect(() => {
     if (phase === "open") {
-      sessionStorage.setItem("intro-seen", "1");
       dispatchEvent(new Event("intro:done"));
     }
     if (phase === "done") document.body.classList.remove("locked");

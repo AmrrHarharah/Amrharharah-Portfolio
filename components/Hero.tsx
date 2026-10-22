@@ -36,10 +36,6 @@ export default function Hero() {
       .catch(() => {});
   }, []);
   useEffect(() => {
-    if (sessionStorage.getItem("intro-seen")) {
-      setGo(true);
-      return;
-    }
     const h = () => setGo(true);
     addEventListener("intro:done", h);
     return () => removeEventListener("intro:done", h);
