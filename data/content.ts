@@ -98,7 +98,7 @@ export const projects = [
     year: "2026",
     stack: "React, Next.js, Tailwind CSS",
     href: "",
-    image: "/projects/project4.png", // screenshot di public/projects/
+    image: "/projects/Project4.png", // screenshot di public/projects/
     summary: "Project untuk mengelola informasi siswa.",
     problem: "Mengelola informasi siswa secara efisien.",
     role: "Mengelola informasi siswa melalui antarmuka web yang intuitif.",
